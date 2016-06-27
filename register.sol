@@ -14,4 +14,8 @@ contract register {
 		else
 			return false;
 	}
+	
+	function domain_owner(string name) {
+		return domains[sha3(name)];
+	}
 }
